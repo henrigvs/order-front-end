@@ -21,7 +21,7 @@ const SignUp = () => {
     };
 
     const handleCancel = () => {
-        // Handle cancel button click
+        window.location.href = '/';
     };
 
     return (
