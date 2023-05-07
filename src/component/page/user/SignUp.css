@@ -1,0 +1,48 @@
+h2{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.signup-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.signup-form label {
+    width: 100%;
+}
+
+.signup-form input,
+.signup-form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+}
+
+.create-btn,
+.cancel-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.cancel-btn {
+    background-color: #6c757d;
+}
+
+.create-btn:hover,
+.cancel-btn:hover {
+    background-color: #0056b3;
+}
