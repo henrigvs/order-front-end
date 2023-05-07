@@ -1,0 +1,35 @@
+.item-details-container {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.item-details-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.item-details-container li {
+    margin-bottom: 0.5rem;
+}
+
+.quantity-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.quantity input{
+    padding: 10px;
+    width: 70px;
+    text-align: center;
+}
+
+.add-basket-btn {
+    padding: 10px;
+}

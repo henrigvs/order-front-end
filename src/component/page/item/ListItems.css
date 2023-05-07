@@ -1,0 +1,59 @@
+.list-items-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 1rem;
+}
+
+.item-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 0 0 calc(33.333% - 1rem);
+    margin-right: 15px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.item-image {
+    max-width: 100%;
+    margin: 10px 0 10px 0;
+    height: auto;
+}
+
+.price-stock-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price{
+    margin-left: 0;
+}
+
+.stock{
+    margin-right: 0;
+}
+
+.filter-container{
+
+}
+
+.filter{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 10px;
+}
+
+.filter input{
+    padding: 10px;
+    text-align: center;
+}
+

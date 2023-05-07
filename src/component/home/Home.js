@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <div className="home-container">
             <h1>Welcome to the Home Page</h1>
-            <p>This is a basic home page. You can customize it as needed.</p>
+            <p>Home page to implement</p>
         </div>
     );
 };

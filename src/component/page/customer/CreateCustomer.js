@@ -1,8 +1,8 @@
 import React from 'react';
-import './SignUp.css';
-import { createUser } from '../../../service/user/UserService'
+import './CreateCustomer.css';
+import {sendUserToBackEnd} from '../../../service/user/UserService'
 
-const SignUp = () => {
+const CreateCustomer = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
 
@@ -17,7 +17,8 @@ const SignUp = () => {
         const zip = formData.get('zip');
         const country = formData.get('country');
 
-        createUser(firstname, lastname, email, phonePrefix, phoneNumber, street, number, zip, country)
+        sendUserToBackEnd(firstname, lastname, email, phonePrefix, phoneNumber, street, number, zip, country);
+        console.log('User data: ', {firstname, lastname, email, phonePrefix, phoneNumber, street, number, zip, country});
     };
 
     const handleCancel = () => {
@@ -26,7 +27,7 @@ const SignUp = () => {
 
     return (
         <div className="signup-container">
-            <h2>Sign Up</h2>
+            <h2>Create a customer</h2>
             <form className="signup-form" onSubmit={handleSubmit}>
                 <label htmlFor="firstname">First Name:</label>
                 <input type="text" id="firstname" name="firstname" required/>
@@ -526,4 +527,4 @@ const SignUp = () => {
     );
 };
 
-export default SignUp;
+export default CreateCustomer;
